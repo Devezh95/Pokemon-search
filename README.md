@@ -4,7 +4,7 @@
 # 🔍 Pokemon Search App
 
 Приложение для поиска покемонов с использованием **PokeAPI**. Реализовано на React с полным покрытием тестами.
-
+DEPLOY: https://pokemon-search-test.netlify.app/
 ---
 
 ## 🎯 Описание
