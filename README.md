@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 📋 README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# 🔍 Pokemon Search App
 
-## Available Scripts
+Приложение для поиска покемонов с использованием **PokeAPI**. Реализовано на React с полным покрытием тестами.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Описание
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Это веб-приложение позволяет:
+- 🔎 Искать покемонов по названию в реальном времени
+- 📊 Просматривать детальную информацию (тип, высота, вес, изображение)
+- ⚡ Использовать debounce для оптимизации API запросов
+- 🎨 Адаптивный дизайн для мобильных и десктопных устройств
+- ✅ Полное покрытие unit тестами
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Технологический стек
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React 18** — UI библиотека
+- **CSS3** — стилизация с анимациями
+- **JavaScript ES6+** — современный JavaScript
 
-### `npm run build`
+### API
+- **PokeAPI v2** — бесплатный API с данными о покемонах
+- **Fetch API** — для HTTP запросов
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Тестирование
+- **Jest** — фреймворк для тестирования
+- **React Testing Library** — тестирование React компонентов
+- **@testing-library/user-event** — симуляция пользовательских действий
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Инструменты
+- **Create React App** — бойлерплейт для React
+- **npm** — менеджер пакетов
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Установка и запуск
+### 1️⃣ Установка зависимостей
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2️⃣ Запуск приложения в режиме разработки
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Приложение откроется на `http://localhost:3000`
 
-## Learn More
+### 3️⃣ Запуск тестов
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Запуск тестов в режиме watch (автоматический перезапуск):
 
-### Code Splitting
+```bash
+npm test -- --watch
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📊 Структура проекта
 
-### Analyzing the Bundle Size
+```
+src/
+├── components/
+│   ├── SearchBar.jsx
+│   ├── ResultsList.jsx
+│   └── PokemonCard.jsx
+├── hooks/
+│   └── useDebounce.js
+├── services/
+│   ├── pokemonApi.js
+│   └── pokemonApi.test.js
+├── styles/
+│   ├── App.css
+│   └── animations.css
+├── App.jsx
+├── App.test.js
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 Как использовать
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Введи название покемона в поисковую строку
+2. Приложение автоматически загружает результаты (debounce 300ms)
+3. Просмотри информацию о покемоне (тип, высота, вес, изображение)
 
-### Advanced Configuration
+**Примеры:** `pikachu`, `charizard`, `dragon`, `electric`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Готово! 🎉
